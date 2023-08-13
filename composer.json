@@ -1,0 +1,26 @@
+{
+    "name": "open-developer-ext/log-viewer",
+    "description": "Log viewer for open developer",
+    "type": "library",
+    "keywords": ["open-developer", "log", "viewer"],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0",
+        "open-developer/open-developer": ">=1.0.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OpenDeveloper\\Developer\\LogViewer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "OpenDeveloper\\Developer\\LogViewer\\LogViewerServiceProvider"
+            ]
+        }
+    }
+}
